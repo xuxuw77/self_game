@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
 <meta charset="gb2312" />
-</head>
 <script>
 var i = 6
+var str = ''
 setInterval(function(){
-	document.write("<h"+i+">猪！徐玄威是猪</h"+i+">")
+	str += "<h"+i+">猪！徐玄威是猪</h"+i+">"	
+	document.getElementsByTagName("body")[0].innerHTML = str
 	i--
 	if(i==0) i = 6
 },100)
